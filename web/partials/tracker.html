@@ -1,0 +1,33 @@
+<div ng-controller="TrackerController">
+    <form class="form-horizontal" ng-show="undoStack.length">
+        <fieldset>
+            <div class="control-group">
+                <div class="controls">
+                    <button class="btn" ng-click="undo()">Löschen rückgängig machen</button>
+                </div>
+            </div>
+        </fieldset>
+    </form>
+    
+    <form class="form-horizontal" ng-show="runningTimer != null">
+        <fieldset>
+            <div class="control-group">
+                <div class="controls">
+                    <label class="control-label" for="comment">Kommentar:</label>
+                    <input ng-model="runningTimer.comment" id="comment"/>
+                    <button class="btn btn-danger" ng-click="stopTimeTracker()">Stop</button>
+                </div>
+            </div>
+        </fieldset>
+    </form>
+    
+    <form class="form-horizontal" ng-show="runningTimer == null">
+        <fieldset>
+            <div class="control-group">
+                <div class="controls">
+                    <button class="btn btn-success" ng-click="startTimeTracker()">Start</button>
+                </div>
+            </div>
+        </fieldset>
+    </form>
+</div>
