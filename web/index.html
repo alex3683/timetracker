@@ -5,40 +5,49 @@
         <title> </title>
         <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css" type="text/css" />
     </head>
-    <body ng-controller="TimeTrackerController">
+    <body data-ng-controller="TimeTrackerController">
 
-    <div class="container">
-        <header>
-            <h1>The real TimeTracker</h1>
-        </header>
-    </div>
-    
-    <div class="container">
-        <ng-include src="'partials/tracker.html'"></ng-include>
-    </div>
+        <div class="container">
+            <header>
+                <h1>The real TimeTracker</h1>
+            </header>
+        </div>
 
-    <div class="container">
-        <div class="row">
-            <div class="span8">
-                <ng-include src="'partials/data_listing.html'"></ng-include>
-            </div>
-            <div class="span4">
-                There will be some data ...
+        <div class="container" data-ng-include="'partials/tracker.html'">
+        </div>
+
+        <div class="container">
+            <form class="form-horizontal" ng-show="undoStack.length">
+                <fieldset>
+                    <div class="control-group">
+                        <div class="controls">
+                            <button class="btn" ng-click="undo()">Löschen rückgängig machen</button>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+            <div class="row">
+                <div class="span8" data-ng-include="'partials/data_listing.html'">
+
+                </div>
+                <div class="span4">
+                    There will be some data ...
+                </div>
             </div>
         </div>
-    </div>
 
-    <script type="text/javascript" src="lib/angular-1.0.1.min.js"></script>
-    <script type="text/javascript" src="app/timetracker.js"></script>
-    
-    <script type="text/javascript" src="app/controllers/TimeTrackerController.js"></script>
-    <script type="text/javascript" charset="utf-8">
-    
-        angular.element( document ).ready( function() {
-            angular.bootstrap( document, [ 'timetracker' ] );
-        } );
-    
-    </script>
+        <script type="text/javascript" src="lib/angular-1.0.1.min.js"></script>
+        <script type="text/javascript" src="app/timetracker.js"></script>
+
+        <script type="text/javascript" src="app/controllers/TimeTrackerController.js"></script>
+        <script type="text/javascript" src="app/controllers/TrackerController.js"></script>
+        <script type="text/javascript" charset="utf-8">
+
+            angular.element( document ).ready( function() {
+                angular.bootstrap( document, [ 'timetracker' ] );
+            } );
+
+        </script>
 
     </body>
 </html>
