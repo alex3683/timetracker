@@ -5,16 +5,31 @@
 
       $scope.runningTimer = null;
 
-      $scope.startTimeTracker = function() {
-         $scope.runningTimer = {
-            'dateFrom': new Date(),
-            'dateTo': null,
-            'duration': null,
-            'comment': ''
-         };
-      };
 
-      $scope.stopTimeTracker = function() {
+       $scope.showModal = false;
+
+       $scope.modalDialogOptions = {
+           backdrop: 'static',
+           escape: false
+       };
+
+       $scope.startTracker = function() {
+           $scope.runningTimer = {
+               'dateFrom': new Date(),
+               'dateTo': null,
+               'duration': null,
+               'comment': ''
+           };
+
+           $scope.showModal = true;
+       };
+
+       $scope.discard = function() {
+           $scope.runningTimer = null;
+           $scope.showModal = false;
+       };
+
+      $scope.save = function() {
          var time = $scope.runningTimer;
          $scope.runningTimer = null;
 
@@ -22,6 +37,7 @@
          time.duration = calculateDuration( time.dateFrom, time.dateTo );
 
          $scope.$emit( 'timeTracked', time );
+          $scope.discard();
       };
 
       var MINUTE_SECONDS = 60;

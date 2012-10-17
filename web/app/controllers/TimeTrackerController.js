@@ -7,6 +7,12 @@
 
       $scope.undoStack = [];
 
+
+       $scope.startTracker = function() {
+
+           $scope.showModal = true;
+       };
+
       $scope.times = [];
 
       $scope.times = JSON.parse( window.localStorage.times || '[]', function( key, value ) {

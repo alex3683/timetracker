@@ -1,24 +1,29 @@
 <div ng-controller="TrackerController">
-    
-    <form class="form-horizontal" ng-show="runningTimer != null">
-        <fieldset>
-            <div class="control-group">
-                <div class="controls">
-                    <label class="control-label" for="comment">Kommentar:</label>
-                    <input ng-model="runningTimer.comment" id="comment"/>
-                    <button class="btn btn-danger" ng-click="stopTimeTracker()">Stop</button>
-                </div>
-            </div>
-        </fieldset>
+
+    <form>
+        <button class="btn btn-primary" ng-click="startTracker()"><i class="icon-time icon-white"></i> Start tracking</button>
     </form>
-    
-    <form class="form-horizontal" ng-show="runningTimer == null">
-        <fieldset>
-            <div class="control-group">
-                <div class="controls">
-                    <button class="btn btn-success" ng-click="startTimeTracker()">Start</button>
+
+    <div class="hide" modal="showModal" options="modalDialogOptions">
+        <div class="modal-header">
+            <h3>Tracking ...</h3>
+        </div>
+        <div class="modal-body">
+            <p>
+            <form class="form-horizontal">
+                <div class="control-group">
+                    <label class="control-label" for="comment">Comment</label>
+                    <div class="controls">
+                        <input type="text" ng-model="runningTimer.comment" id="comment" placeholder="Who? What? Why? ...">
+                    </div>
                 </div>
-            </div>
-        </fieldset>
-    </form>
+            </form>
+
+            </p>
+        </div>
+        <div class="modal-footer">
+            <a href="#" class="btn btn-danger" ng-click="discard()">Discard</a>
+            <a href="#" class="btn btn-primary" ng-click="save()">Save</a>
+        </div>
+    </div>
 </div>
