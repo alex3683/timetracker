@@ -27,8 +27,12 @@
       }
    ],
    "dependencies": {
-      "alfred": "0.5.x",
       "express": "3.x",
-      "q": "0.8.x"
+      "jasmine-node": "",
+      "nstore": "0.5.x",
+      "q": "0.8.x",
+      "testacular": "",
+      "underscore": "1.4.x",
+      "winston": "0.6.x"
    }
 }
