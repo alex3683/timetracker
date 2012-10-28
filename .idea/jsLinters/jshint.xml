@@ -15,7 +15,7 @@
     <option jquery="true" />
     <option node="true" />
     <option maxerr="50" />
-    <option predef="describe,it,expect,beforeEach,before,afterEach,after,waitsFor,runs,jasmine" />
+    <option predef="define,require,describe,it,expect,beforeEach,before,afterEach,after,waitsFor,runs,jasmine" />
   </component>
 </project>
 

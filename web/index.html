@@ -1,68 +1,65 @@
 <!DOCTYPE html>
 <html lang="de">
-    <head>
-        <meta charset="UTF-8"/>
-        <title>Timetracker</title>
-        <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css" type="text/css" />
-        <link rel="stylesheet" href="css/main.css" type="text/css" />
-    </head>
-    <body data-ng-controller="TimeTrackerController">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Timetracker</title>
+    <link rel="stylesheet" href="components/bootstrap/docs/assets/css/bootstrap.css" type="text/css"/>
+    <link rel="stylesheet" href="css/main.css" type="text/css"/>
+</head>
+<body data-ng-controller="TimeTrackerController">
 
-        <div class="navbar navbar-inverse navbar-fixed-top">
-            <div class="navbar-inner">
-                <div class="container">
-                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </a>
-                    <a class="brand" href="#">timetracker</a>
-                    <div class="nav-collapse collapse">
-                       <!-- <ul class="nav">
-                            <li class="active"><a href="#">Home</a></li>
-                            <li><a href="#about">About</a></li>
-                            <li><a href="#contact">Contact</a></li>
-                        </ul>-->
-                    </div><!--/.nav-collapse -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a>
+                <a class="brand" href="#">timetracker</a>
+
+                <div class="nav-collapse collapse">
+                    <!-- <ul class="nav">
+                         <li class="active"><a href="#">Home</a></li>
+                         <li><a href="#about">About</a></li>
+                         <li><a href="#contact">Contact</a></li>
+                     </ul>-->
                 </div>
+                <!--/.nav-collapse -->
             </div>
         </div>
+    </div>
 
-        <div class="container">
-            <div class="row">
-                <div class="span6" ng-include="'partials/tracker.html'">
-                </div>
-                <div class="span6">
-                    <form ng-show="undoStack.length">
-                        <button class="btn" ng-click="undo()">Löschen rückgängig machen</button>
-                    </form>
-                </div>
+    <div class="container">
+        <div class="row">
+            <div class="span6" ng-include="'partials/tracker.html'">
             </div>
-            <div class="row">
-                <div class="span8" data-ng-include="'partials/data_listing.html'">
-
-                </div>
-                <div class="span4">
-                    There will be some data ...
-                </div>
+            <div class="span6">
+                <form ng-show="undoStack.length">
+                    <button class="btn" ng-click="undo()">Löschen rückgängig machen</button>
+                </form>
             </div>
         </div>
+        <div class="row">
+            <div class="span8" data-ng-include="'partials/data_listing.html'">
 
-        <script type="text/javascript" src="lib/jquery-1.8.2.min.js"></script>
+            </div>
+            <div class="span4">
+                There will be some data ...
+            </div>
+        </div>
+    </div>
+    <!--
+        <script type="text/javascript" src="components/jquery/jquery.js"></script>
         <script type="text/javascript" src="lib/bootstrap/js/bootstrap.min.js"></script>
         <script type="text/javascript" src="lib/angular-1.0.1.min.js"></script>
-        <script type="text/javascript" src="lib/angular-bootstrap/modal.js"></script>
+        <script type="text/javascript" src="vendor/angular-bootstrap/modal.js"></script>
         <script type="text/javascript" src="app/timetracker.js"></script>
 
         <script type="text/javascript" src="app/controllers/TimeTrackerController.js"></script>
         <script type="text/javascript" src="app/controllers/TrackerController.js"></script>
-        <script type="text/javascript" charset="utf-8">
+    -->
+    <script type="text/javascript" data-main="init" src="components/requirejs/require.js"></script>
 
-            angular.element( document ).ready( function() {
-                angular.bootstrap( document, [ 'timetracker', 'ui.bootstrap.modal' ] );
-            } );
-
-        </script>
-
-    </body>
+</body>
 </html>

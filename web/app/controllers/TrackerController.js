@@ -1,33 +1,35 @@
-(function( timetracker ) {
+define( [ 'angular' ], function( angular ) {
    'use strict';
 
-   timetracker.controller( 'TrackerController', function( $scope ) {
+   var module = angular.module( 'controllers.TrackerController', [] );
+
+   module.controller( 'TrackerController', function( $scope ) {
 
       $scope.runningTimer = null;
 
 
-       $scope.showModal = false;
+      $scope.showModal = false;
 
-       $scope.modalDialogOptions = {
-           backdrop: 'static',
-           escape: false
-       };
+      $scope.modalDialogOptions = {
+         backdrop: 'static',
+         escape: false
+      };
 
-       $scope.startTracker = function() {
-           $scope.runningTimer = {
-               'dateFrom': new Date(),
-               'dateTo': null,
-               'duration': null,
-               'comment': ''
-           };
+      $scope.startTracker = function() {
+         $scope.runningTimer = {
+            'dateFrom': new Date(),
+            'dateTo': null,
+            'duration': null,
+            'comment': ''
+         };
 
-           $scope.showModal = true;
-       };
+         $scope.showModal = true;
+      };
 
-       $scope.discard = function() {
-           $scope.runningTimer = null;
-           $scope.showModal = false;
-       };
+      $scope.discard = function() {
+         $scope.runningTimer = null;
+         $scope.showModal = false;
+      };
 
       $scope.save = function() {
          var time = $scope.runningTimer;
@@ -37,7 +39,7 @@
          time.duration = calculateDuration( time.dateFrom, time.dateTo );
 
          $scope.$emit( 'timeTracked', time );
-          $scope.discard();
+         $scope.discard();
       };
 
       var MINUTE_SECONDS = 60;
@@ -68,4 +70,6 @@
 
    } );
 
-})( window.timetracker );
+   return module;
+
+} );

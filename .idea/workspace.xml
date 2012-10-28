@@ -2,16 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4c38497c-fde0-447e-96ea-4a3e401011c7" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/specs/node/store_spec.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/specs/web/trivial_spec.js" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/app.build.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/component.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/init.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/lib/angular-1.0.1.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/lib/bootstrap/css/bootstrap-responsive.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/lib/bootstrap/css/bootstrap-responsive.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/lib/bootstrap/css/bootstrap.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/lib/bootstrap/css/bootstrap.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/lib/bootstrap/img/glyphicons-halflings-white.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/lib/bootstrap/img/glyphicons-halflings.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/lib/bootstrap/js/bootstrap.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/lib/bootstrap/js/bootstrap.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/lib/jquery-1.8.2.min.js" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/lib/angular-bootstrap/modal.js" afterPath="$PROJECT_DIR$/web/vendor/angular-bootstrap/modal.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/jsLinters/jshint.xml" afterPath="$PROJECT_DIR$/.idea/jsLinters/jshint.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/rest_api/api.js" afterPath="$PROJECT_DIR$/lib/rest_api/api.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/rest_api/helpers.js" afterPath="$PROJECT_DIR$/lib/rest_api/helpers.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/rest_api/jsonToHtmlConverter.js" afterPath="$PROJECT_DIR$/lib/rest_api/jsonToHtmlConverter.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/rest_api/users.js" afterPath="$PROJECT_DIR$/lib/rest_api/users.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/store.js" afterPath="$PROJECT_DIR$/lib/store.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_node" afterPath="$PROJECT_DIR$/test_node" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/app/controllers/TimeTrackerController.js" afterPath="$PROJECT_DIR$/web/app/controllers/TimeTrackerController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/app/controllers/TrackerController.js" afterPath="$PROJECT_DIR$/web/app/controllers/TrackerController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/app/timetracker.js" afterPath="$PROJECT_DIR$/web/app/timetracker.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/index.html" afterPath="$PROJECT_DIR$/web/index.html" />
     </list>
     <ignored path="timetracker.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,10 +42,82 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/index.js">
+      <file leaf-file-name="component.json" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/component.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="10" selection-start="1072" selection-end="1072" vertical-scroll-proportion="0.60251045">
+            <state line="9" column="4" selection-start="203" selection-end="203" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="5" selection-start="23" selection-end="23" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="60" column="7" selection-start="2450" selection-end="2450" vertical-scroll-proportion="-22.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="timetracker.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/app/timetracker.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="16" selection-start="155" selection-end="155" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TimeTrackerController.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/app/controllers/TimeTrackerController.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="32" selection-start="95" selection-end="95" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TrackerController.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/app/controllers/TrackerController.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="35" column="36" selection-start="846" selection-end="846" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="init.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/init.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="33" selection-start="111" selection-end="111" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.build.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/app.build.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="3" selection-start="113" selection-end="113" vertical-scroll-proportion="0.18828452">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="modal.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/vendor/angular-bootstrap/modal.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="0" selection-start="497" selection-end="497" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -59,14 +142,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/index.js" />
-        <option value="$PROJECT_DIR$/specs/trivial_spec.js" />
-        <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/specs/store_spec.js" />
-        <option value="$PROJECT_DIR$/testacular.conf.js" />
-        <option value="$PROJECT_DIR$/node_modules/jasmine-node/lib/jasmine-node/autotest.js" />
-        <option value="$PROJECT_DIR$/specs/node/store_spec.js" />
-        <option value="$PROJECT_DIR$/test_node" />
         <option value="$PROJECT_DIR$/lib/rest_api/api.js" />
         <option value="$PROJECT_DIR$/lib/store.js" />
         <option value="$PROJECT_DIR$/lib/rest_api/helpers.js" />
@@ -75,6 +150,14 @@
         <option value="$PROJECT_DIR$/spec/node/store_spec.js" />
         <option value="$PROJECT_DIR$/lib/spec/store_spec.js" />
         <option value="$PROJECT_DIR$/web/partials/tracker.html" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/web/component.json" />
+        <option value="$PROJECT_DIR$/web/app/timetracker.js" />
+        <option value="$PROJECT_DIR$/web/app/controllers/TimeTrackerController.js" />
+        <option value="$PROJECT_DIR$/web/index.html" />
+        <option value="$PROJECT_DIR$/web/init.js" />
+        <option value="$PROJECT_DIR$/web/app/controllers/TrackerController.js" />
+        <option value="$PROJECT_DIR$/web/app.build.js" />
       </list>
     </option>
   </component>
@@ -150,6 +233,42 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="timetracker" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="timetracker" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="timetracker" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="timetracker" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="angular-bootstrap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -183,6 +302,7 @@
       <recent name="$PROJECT_DIR$/lib" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/web/vendor" />
       <recent name="$PROJECT_DIR$/lib/spec" />
       <recent name="$PROJECT_DIR$/specs/node" />
       <recent name="$PROJECT_DIR$/specs/web" />
@@ -394,128 +514,121 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/lib/rest_api/jsonToHtmlConverter.js">
+    <entry file="file://$PROJECT_DIR$/web/components/angular/component.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="115" selection-end="115" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/components/bootstrap/js/bootstrap-modal.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="0" selection-start="863" selection-end="863" vertical-scroll-proportion="-0.10460251">
           <folding>
-            <marker date="1351334469000" expanded="true" signature="142:405" placeholder="{...}" />
-            <marker date="1351334469000" expanded="true" signature="171:212" placeholder="{...}" />
-            <marker date="1351334469000" expanded="true" signature="246:288" placeholder="{...}" />
-            <marker date="1351334469000" expanded="true" signature="322:364" placeholder="{...}" />
-            <marker date="1351334469000" expanded="true" signature="373:403" placeholder="{...}" />
-            <marker date="1351334469000" expanded="true" signature="437:581" placeholder="{...}" />
-            <marker date="1351334469000" expanded="true" signature="500:562" placeholder="{...}" />
-            <marker date="1351334469000" expanded="true" signature="614:789" placeholder="{...}" />
-            <marker date="1351334469000" expanded="true" signature="677:770" placeholder="{...}" />
-            <marker date="1351334469000" expanded="true" signature="822:957" placeholder="{...}" />
-            <marker date="1351334469000" expanded="true" signature="859:919" placeholder="{...}" />
-            <marker date="1351334469000" expanded="true" signature="994:1107" placeholder="{...}" />
-            <marker date="1351334469000" expanded="true" signature="1049:1102" placeholder="{...}" />
+            <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/lib/angular-bootstrap/modal.js">
+    <entry file="file://$PROJECT_DIR$/web/components/jquery/jquery.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="10" selection-start="764" selection-end="764" vertical-scroll-proportion="0.6699029">
+        <state line="9283" column="0" selection-start="259018" selection-end="259018" vertical-scroll-proportion="0.49790794">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.html">
+    <entry file="file://$PROJECT_DIR$/web/components/requirejs/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="42" selection-start="1381" selection-end="1381" vertical-scroll-proportion="-6.875">
+        <state line="21" column="0" selection-start="790" selection-end="790" vertical-scroll-proportion="0.45454547">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/partials/tracker.html">
+    <entry file="file://$PROJECT_DIR$/web/components/requirejs/testBaseUrl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="20" selection-start="212" selection-end="212" vertical-scroll-proportion="-3.75">
+        <state line="10" column="3" selection-start="196" selection-end="196" vertical-scroll-proportion="0.20920502">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/app/controllers/TrackerController.js">
+    <entry file="file://$PROJECT_DIR$/web/components/requirejs/require.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="20" selection-start="926" selection-end="926" vertical-scroll-proportion="0.0">
-          <folding />
+        <state line="27" column="52" selection-start="1307" selection-end="1307" vertical-scroll-proportion="0.56485355">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/rest_api/users.js">
+    <entry file="file://$PROJECT_DIR$/web/components/angular/angular.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="27" selection-start="1151" selection-end="1151" vertical-scroll-proportion="0.0">
-          <folding />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding>
+            <marker date="1351430509000" expanded="true" signature="476176:476191" placeholder="{...}" />
+            <marker date="1351430509000" expanded="true" signature="476200:476216" placeholder="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/store.js">
+    <entry file="file://$PROJECT_DIR$/web/vendor/angular-bootstrap/modal.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="147" selection-end="147" vertical-scroll-proportion="0.16736402">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/rest_api/api.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="23" selection-start="421" selection-end="433" vertical-scroll-proportion="0.56485355">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/rest_api/helpers.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="77" selection-end="77" vertical-scroll-proportion="0.06276151">
+        <state line="13" column="0" selection-start="497" selection-end="497" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/app/controllers/TimeTrackerController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="29" selection-start="928" selection-end="928" vertical-scroll-proportion="0.0">
+        <state line="3" column="32" selection-start="95" selection-end="95" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/spec/store_spec.js">
+    <entry file="file://$PROJECT_DIR$/web/app/timetracker.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="31" selection-start="919" selection-end="919" vertical-scroll-proportion="0.0">
+        <state line="4" column="16" selection-start="155" selection-end="155" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/users.db">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="80" selection-end="80" vertical-scroll-proportion="0.058252428">
+        <state line="2" column="5" selection-start="23" selection-end="23" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/tasks.db">
+    <entry file="file://$PROJECT_DIR$/web/component.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="9" column="4" selection-start="203" selection-end="203" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/var/exceptions.log">
+    <entry file="file://$PROJECT_DIR$/web/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="60" column="7" selection-start="2450" selection-end="2450" vertical-scroll-proportion="-22.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/var/server.log">
+    <entry file="file://$PROJECT_DIR$/web/app/controllers/TrackerController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-4.125523">
+        <state line="35" column="36" selection-start="846" selection-end="846" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.js">
+    <entry file="file://$PROJECT_DIR$/web/init.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="10" selection-start="1072" selection-end="1072" vertical-scroll-proportion="0.60251045">
+        <state line="5" column="33" selection-start="111" selection-end="111" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/app.build.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="3" selection-start="113" selection-end="113" vertical-scroll-proportion="0.18828452">
           <folding />
         </state>
       </provider>

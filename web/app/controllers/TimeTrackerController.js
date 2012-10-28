@@ -1,17 +1,19 @@
-(function( timetracker ) {
+define( [ 'angular' ], function( angular ) {
    'use strict';
 
    var CURRENT_DATA_VERSION = 1;
 
-   timetracker.controller( 'TimeTrackerController', function( $scope ) {
+   var module = angular.module( 'controllers.TimeTrackerController', [] );
+
+   module.controller( 'TimeTrackerController', function( $scope ) {
 
       $scope.undoStack = [];
 
 
-       $scope.startTracker = function() {
+      $scope.startTracker = function() {
 
-           $scope.showModal = true;
-       };
+         $scope.showModal = true;
+      };
 
       $scope.times = [];
 
@@ -54,4 +56,6 @@
 
    } );
 
-})( window.timetracker );
+   return module;
+
+} );
