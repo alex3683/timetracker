@@ -22,7 +22,6 @@
    ], function( angular ) {
 
       angular.element( document ).ready( function() {
-         console.log( 'here' );
          angular.bootstrap( document, [ 'timetracker', 'ui.bootstrap.modal' ] );
       } );
 

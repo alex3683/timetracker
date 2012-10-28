@@ -5,7 +5,7 @@ define( [ 'angular' ], function( angular ) {
 
    var module = angular.module( 'controllers.TimeTrackerController', [] );
 
-   module.controller( 'TimeTrackerController', function( $scope ) {
+   module.controller( 'TimeTrackerController', [ '$scope', function( $scope ) {
 
       $scope.undoStack = [];
 
@@ -54,7 +54,7 @@ define( [ 'angular' ], function( angular ) {
          window.localStorage.times = JSON.stringify( $scope.times );
       };
 
-   } );
+   } ] );
 
    return module;
 

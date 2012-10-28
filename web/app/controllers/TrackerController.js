@@ -3,7 +3,7 @@ define( [ 'angular' ], function( angular ) {
 
    var module = angular.module( 'controllers.TrackerController', [] );
 
-   module.controller( 'TrackerController', function( $scope ) {
+   module.controller( 'TrackerController', [ '$scope', function( $scope ) {
 
       $scope.runningTimer = null;
 
@@ -68,7 +68,7 @@ define( [ 'angular' ], function( angular ) {
          };
       }
 
-   } );
+   } ] );
 
    return module;
 
